@@ -2,12 +2,12 @@
 div {
     width: 400px;
     height: 200px;
-    background-color: rgb(255, 5, 243);
+    background-color:  grey;
     margin-top: 20px;
     display: inline-block;
 }
 .block1 {
-    background-color: skyblue;
+    background-color: grey;
     width: 555 px;
     height: 230 px;
     margin-top: 22px;
@@ -15,7 +15,7 @@ div {
     display: inline-block 400px;
 }
 #block2 {
-    background-color: rgb(163, 196, 18);
+    background-color: grey;
     width: 600 px;
     height: 430 px;
     margin-top: 52px;
@@ -23,7 +23,7 @@ div {
     display: inline-block 500 px;
 }
 .block3 {
-    background-color: rgb(63, 18, 18);
+    background-color: grey;
     width: 755 px;
     height: 130 px;
     margin-top: 22px;
@@ -42,7 +42,7 @@ div {
     width: 100px;
     height: 50px;
     border-radius: 10px;
-    background-color: blueviolet;
+    background-color:  yellow;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -52,5 +52,44 @@ div {
  }
  #check:checked ~ .hiddenblock {
     opacity: 100;
-    transform: scale(5);
+    transform: scale(1);
  }
+
+ .hiddenblock2 {
+    width: 100px;
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:  yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.5s;
+    opacity: 0;
+ }
+ #check:checked ~ .hiddenblock2 {
+    opacity: 100;
+    transform: scale(1);
+ }
+ 
+ .hiddenblock3 {
+    width: 100px;
+    height: 50px;
+    border-radius: 10px;
+    background-color:  yellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition:  0.5s;
+    opacity: 0;
+ }
+
+ #check:checked ~ .hiddenblock3 {
+    opacity: 100;
+    transform: rotate(360deg);
+ }
+
+#rad:checked ~.hiddenblock3 {
+    opacity: 200;
+    transform: rotate(720deg);
+}
